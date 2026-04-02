@@ -15,7 +15,8 @@ public class Lista2 {
 		//exercicio11();
 		//exercicio12();
 		//exercicio13();
-		exercicio14();
+		//exercicio14();
+		exercicio15();
 	}
 	// Nível Básico: 
 	static void exercicio1() {
@@ -238,5 +239,21 @@ public class Lista2 {
 		
 		double valorDesconto = (valor - desconto);
 		System.out.println("O valor com desconto = " + valorDesconto);
+	}
+	static void exercicio15() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite sua idade: ");
+		int idade = sc.nextInt();
+	
+		if (idade <= 12) {
+			System.out.println("Você é uma Criança");
+		} else if (idade <= 17) {
+			System.out.println("Você é um Adolescente");
+		} else if (idade <= 59) {
+			System.out.println("Você é um Adulto");
+		} else {
+			System.out.println("Voce é um Idoso");
+		}
 	}
 }
