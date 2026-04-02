@@ -14,7 +14,8 @@ public class Lista2 {
 		//exercicio10();
 		//exercicio11();
 		//exercicio12();
-		exercicio13();
+		//exercicio13();
+		exercicio14();
 	}
 	// Nível Básico: 
 	static void exercicio1() {
@@ -219,5 +220,23 @@ public class Lista2 {
 		
 		System.out.println("Imposto R$: " + imposto);
 		System.out.println("Salario liquido: " + salarioLiquido);
+	}
+	static void exercicio14() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Valor da compra:");
+		double valor = sc.nextDouble();
+		double desconto;
+		
+		if (valor < 100) {
+			desconto = 0;
+		} else if (valor <=500) {
+			desconto = (valor * 0.10);
+		} else {
+			desconto = (valor * 0.20);
+		}
+		
+		double valorDesconto = (valor - desconto);
+		System.out.println("O valor com desconto = " + valorDesconto);
 	}
 }
