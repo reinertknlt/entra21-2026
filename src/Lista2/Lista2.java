@@ -17,7 +17,8 @@ public class Lista2 {
 		//exercicio13();
 		//exercicio14();
 		//exercicio15();
-		exercicio16();
+		//exercicio16();
+		exercicio17();
 	}
 	// Nível Básico: 
 	static void exercicio1() {
@@ -277,6 +278,21 @@ public class Lista2 {
 			System.out.println("Você esta de Recuperação");
 		} else {
 			System.out.println("Você foi Aprovado!");
+		}
+	}
+	static void exercicio17() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Informe o salário: ");
+		double salario = sc.nextDouble();
+		System.out.println("Informe o valor da parcela: ");
+		double parcela = sc.nextDouble();
+		double limite = (salario * 0.30);
+		
+		if (parcela <= limite) {
+			System.out.println("Aprovado");
+		} else {
+			System.out.println("Negado");
 		}
 	}
 }
