@@ -18,7 +18,9 @@ public class Lista2 {
 		//exercicio14();
 		//exercicio15();
 		//exercicio16();
-		exercicio17();
+		//exercicio17();
+		//exercicio18();
+		exercicio19();
 	}
 	// Nível Básico: 
 	static void exercicio1() {
@@ -293,6 +295,42 @@ public class Lista2 {
 			System.out.println("Aprovado");
 		} else {
 			System.out.println("Negado");
+		}
+	}
+	static void exercicio18() {
+		Scanner sc = new Scanner(System.in);
+		
+		int numero = 8;
+		System.out.println("Adivinhe o numero:");
+		int resposta = sc.nextInt();
+		
+		if (resposta < 8) {
+			System.out.println("Menor");
+		} else if (resposta > 8) {
+			System.out.println("Maior");
+		} else {
+			System.out.println("Acertou");
+		}
+	}
+	static void exercicio19() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite sua altura: ");
+		double altura = sc.nextDouble();
+		System.out.println("Digite seu peso: ");
+		double peso = sc.nextDouble();
+		
+		double imc = (peso / (altura * altura));
+		System.out.println("Seu IMC é: " + imc);
+		
+		if (imc <= 18.4) {
+			System.out.println("Abaixo do Peso");
+		} else if (imc <=24.9) {
+			System.out.println("Peso Normal");
+		} else if (imc <= 29.9) {
+			System.out.println("Sobrepeso");
+		} else {
+			System.out.println("Obesidade");
 		}
 	}
 }
