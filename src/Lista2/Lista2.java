@@ -20,7 +20,8 @@ public class Lista2 {
 		//exercicio16();
 		//exercicio17();
 		//exercicio18();
-		exercicio19();
+		//exercicio19();
+		exercicio20();
 	}
 	// Nível Básico: 
 	static void exercicio1() {
@@ -332,5 +333,29 @@ public class Lista2 {
 		} else {
 			System.out.println("Obesidade");
 		}
+	}
+	static void exercicio20() {
+		  Scanner sc = new Scanner(System.in);
+		  
+		  String usuario = "Lucasd";
+		  String senha = "2709";
+		  int tentativas = 0;
+		  
+		  while (tentativas < 3) {
+			  System.out.println("Informe usuario: ");
+			  String usuario1 = sc.nextLine();
+			  System.out.println("Informe senha: ");
+			  String senha1 = sc.nextLine();
+			  
+			  if (usuario1.equals(usuario) && senha1.equals(senha)) {
+				  System.out.println("Permitido");
+				  return;
+			  } else {
+				  tentativas ++;
+				  System.out.println("Negado, tentativas restantes: " + (3 - tentativas));
+			  }
+		  }
+		  System.out.println(" ");
+		  System.out.println("Acesso bloqueado. Muitas tentativas");
 	}
 }
